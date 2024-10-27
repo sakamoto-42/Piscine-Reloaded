@@ -1,22 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_point.h                                         :+:      :+:    :+:   */
+/*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sakamoto-42 <sakamoto-42@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/15 16:47:33 by sakamoto-42       #+#    #+#             */
-/*   Updated: 2024/08/15 16:57:10 by sakamoto-42      ###   ########.fr       */
+/*   Created: 2024/10/27 10:17:37 by sakamoto-42       #+#    #+#             */
+/*   Updated: 2024/10/27 10:18:02 by sakamoto-42      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_POINT_H
-# define FT_POINT_H
+#include <unistd.h>
 
-typedef struct s_point
+void	ft_putchar(char c)
 {
-	int	x;
-	int	y;
-}	t_point;
-
-#endif
+	write(1, &c, 1);
+}

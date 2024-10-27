@@ -5,22 +5,33 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: sakamoto-42 <sakamoto-42@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/15 13:11:40 by sakamoto-42       #+#    #+#             */
-/*   Updated: 2024/08/15 13:23:52 by sakamoto-42      ###   ########.fr       */
+/*   Created: 2024/10/27 09:45:10 by sakamoto-42       #+#    #+#             */
+/*   Updated: 2024/10/27 09:57:02 by sakamoto-42      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+//#include <stdio.h>
 
 int	ft_sqrt(int nb)
 {
 	int	i;
 
-	if (nb == 0)
-		return (0);
 	i = 1;
-	while (i * i < nb)
+	while (i * i <= nb)
+	{
+		if (i * i == nb)
+			return (i);
 		i++;
-	if (i * i == nb)
-		return (i);
-	else
-		return (0);
+	}
+	return (0);
 }
+
+/*
+int	main(void)
+{
+	int	nb;
+
+	nb = 81;
+	printf("The square root of %d is %d\n", nb, ft_sqrt(nb));
+}
+*/

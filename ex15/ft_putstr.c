@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: sakamoto-42 <sakamoto-42@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/15 13:30:56 by sakamoto-42       #+#    #+#             */
-/*   Updated: 2024/08/15 13:31:58 by sakamoto-42      ###   ########.fr       */
+/*   Created: 2024/10/27 09:52:18 by sakamoto-42       #+#    #+#             */
+/*   Updated: 2024/10/27 09:56:40 by sakamoto-42      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putchar(char c);
+//void	ft_putchar(char c);
 
 void	ft_putstr(char *str)
 {
@@ -20,3 +20,10 @@ void	ft_putstr(char *str)
 		str++;
 	}
 }
+
+/*
+int	main(void)
+{
+	ft_putstr("Hello, World !");
+}
+*/

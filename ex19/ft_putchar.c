@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_abs.h                                           :+:      :+:    :+:   */
+/*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sakamoto-42 <sakamoto-42@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/15 16:29:38 by sakamoto-42       #+#    #+#             */
-/*   Updated: 2024/08/15 22:07:45 by sakamoto-42      ###   ########.fr       */
+/*   Created: 2024/10/27 10:23:11 by sakamoto-42       #+#    #+#             */
+/*   Updated: 2024/10/27 10:23:36 by sakamoto-42      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_ABS_H
-# define FT_ABS_H
+#include <unistd.h>
 
-# define ABS(Value) (Value * ((Value > 0) - (Value < 0)));
-
-#endif
+void	ft_putchar(char c)
+{
+	write(1, &c, 1);
+}

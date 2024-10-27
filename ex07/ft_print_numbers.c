@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: sakamoto-42 <sakamoto-42@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/15 09:48:45 by sakamoto-42       #+#    #+#             */
-/*   Updated: 2024/08/15 09:52:52 by sakamoto-42      ###   ########.fr       */
+/*   Created: 2024/10/25 21:39:05 by sakamoto-42       #+#    #+#             */
+/*   Updated: 2024/10/25 21:45:17 by sakamoto-42      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,19 @@ void	ft_putchar(char c);
 
 void	ft_print_numbers(void)
 {
-	char	c;
+	int	i;
 
-	c = '0';
-	while (c <= '9')
+	i = 0;
+	while (i <= 9)
 	{
-		ft_putchar(c);
-		c++;
+		ft_putchar((char)(i + '0'));
+		i++;
 	}
 }
+
+/*
+int	main(void)
+{
+	ft_print_numbers();
+}
+*/

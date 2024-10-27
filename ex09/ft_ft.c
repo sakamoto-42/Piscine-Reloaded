@@ -5,12 +5,26 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: sakamoto-42 <sakamoto-42@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/15 10:29:51 by sakamoto-42       #+#    #+#             */
-/*   Updated: 2024/08/15 10:30:36 by sakamoto-42      ###   ########.fr       */
+/*   Created: 2024/10/25 21:46:40 by sakamoto-42       #+#    #+#             */
+/*   Updated: 2024/10/25 21:49:15 by sakamoto-42      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+//#include <stdio.h>
 
 void	ft_ft(int *nbr)
 {
 	*nbr = 42;
 }
+
+/*
+int	main(void)
+{
+	int	i;
+
+	i = 24;
+	printf("%d\n", i);
+	ft_ft(&i);
+	printf("%d\n", i);
+}
+*/
